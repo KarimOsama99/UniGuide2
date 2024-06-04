@@ -1820,3 +1820,13 @@ table th {
     color: var(--primary) !important;
     font-weight: bold !important;
 }
+
+.viewPhotos {
+    background-color: var(--red);
+    color: #fff;
+    border-color: var(--red);
+}
+.viewPhotos:hover {
+    background-color: #ff5656a2 !important;
+    border-color: var(--green);
+}

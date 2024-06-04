@@ -20910,6 +20910,7 @@ ol.breadcrumb,ul.breadcrumb {
     font-size: 3em;
     font-size: 1em;
     left: -3px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {

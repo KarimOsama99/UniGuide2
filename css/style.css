@@ -1813,3 +1813,10 @@ table th {
     /* flex-direction: row-reverse; */
     color: #707070;
 }
+
+
+.menu .active u {
+    width: 100% !important;
+    color: var(--primary) !important;
+    font-weight: bold !important;
+}

@@ -15,4 +15,8 @@ $(function () {
     $(".uniBtns button").click(function () {
       $(this).addClass("active").siblings().removeClass("active");
     });
+
+    $(".menu p").click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
 });

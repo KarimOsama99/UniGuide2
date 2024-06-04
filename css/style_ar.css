@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Recursive:wght@300..1000&display=swap');
+
+
+body {
+    font-family: 'Cairo', sans-serif !important;
+    direction: rtl;
+}
+.ltr {
+    direction: ltr !important;
+}
+.ltr .reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.header-carousel .owl-nav {
+    right: unset !important;
+    left: 8% !important;
+}
+.hero {
+    max-width: unset !important;
+    text-align: right !important;
+    direction: rtl;
+}
+
+.btn {
+    font-family: 'Cairo', sans-serif !important;
+}
+
+.aboutRight .section-title {
+    padding-right: unset !important;
+    padding-left: 1rem;
+}
+
+.aboutRight .section-title.text-start::before,
+.aboutRight .section-title.text-start::after {
+    right: 0 !important;
+}
+
+.dropdown-toggle::after {
+    margin-right: .255rem !important;
+}
+.langs a {
+    text-align: right;
+}
+.langs a:hover {
+    padding-right: 5px;
+}
+.flags img {
+    margin-left: 5px;
+}
+.navbar-toggler {
+    margin-right: 0 !important;
+    margin-left: 1rem;
+}
+
+.navbar-nav {
+    margin-left: 25px !important;
+    margin-right: auto !important;
+    text-align: right;
+}
+.nav-item.dropdown {
+    text-align: right;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: unset !important;
+}
+
+.whatsapp {
+    right: unset;
+    left: 45px !important;
+}
+.back-to-top {
+    right: unset;
+    left: 45px !important;
+}
+@media (max-width: 767px) {
+    .whatsapp {
+        right: unset !important;
+        left: 25px !important;
+    }
+    .back-to-top {
+        right: unset !important;
+        left: 25px !important;
+    }
+}
+
+.form-floating>label {
+    right: 0 !important;
+    left: unset !important;
+}
+
+.faq ul {
+    padding-right: 0;
+}
+.faq ul li i {
+    margin-left: 10px !important;
+}
+
+.fa-angle-double-right {
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+.fa-arrow-right {
+    transform: rotate(180deg);
+    margin-left: unset !important;
+    margin-right: 10px;
+}
+
+
+.card-title,
+.card-body {
+    text-align: right !important;
+}
+
+.footer .mb-2 i {
+    margin-left: 8px;
+}
+
+.aboutList li:before {
+    margin-left: 5px;
+}
+
+
+
+/* Programs */
+
+body.showFilter .filterSide {
+    left: unset !important;
+    right: 0 !important;
+}
+
+.logo.mr-2 {
+    padding-left: unset !important;
+    padding-right: 25px !important;
+    margin-left: 10px;
+}
+
+.title.med-title {
+    text-align: right !important;
+    padding-right: 10px;
+}
+
+.bold {
+    margin-right: 0 !important;
+    margin-left: 15px;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .bold .after {
+        margin-right: 15px;
+    }
+}
+.inner {
+    text-align: right;
+}
+
+.customedInputs .theInput .checkmark {
+    right: 0 !important;
+}
+.accordion .accordion__title {
+    padding-right: 0 !important;
+}
+.accordion__title {
+    text-align: right;
+}
+.accordion .accordion__title .arrow {
+    right: unset !important;
+    left: 0 !important;
+}
+.theInput.checkbox .name {
+    text-align: right;
+    margin-right: 40px;
+}

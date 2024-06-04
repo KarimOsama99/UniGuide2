@@ -1830,3 +1830,48 @@ table th {
     background-color: #ff5656a2 !important;
     border-color: var(--green);
 }
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog .carousel,
+.modal-dialog .modal-content {
+    width: auto;
+    height: 400px;
+}
+    
+.modal-content .carousel-item img {
+    width: auto !important;
+    min-height: 300px !important;
+}
+
+/* .modal-content video {
+    width: 350px !important;
+    min-height: 400px !important;
+} */
+
+@media (min-width: 992px) {
+    .modal-dialog .modal-content video {
+        width: 800px;
+    }
+
+    .modal-dialog .carousel,
+    .modal-dialog .modal-content {
+        width: 850px;
+        height: 650px;
+    }
+    
+    .modal-content .carousel-item img {
+        width: 850px !important;
+        height: 600px !important;
+    }
+    .carousel-control-next {
+        right: -100px;
+    }
+    .carousel-control-prev {
+        left: -100px;
+    }
+}

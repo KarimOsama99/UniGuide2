@@ -58,5 +58,3 @@ toggle.addEventListener('click', () => {
 //   infoItem.classList.add('active');
 //   // infoItems.classList.remove('active');
 // })
-
-

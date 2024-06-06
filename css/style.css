@@ -1041,23 +1041,26 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding-top: 10px;
-    border-top: 1px solid var(--light);
+    padding: 10px 10px 0;
+    /* border-top: 1px solid var(--light); */
 }
 .card-body .price p {
     margin-bottom: 0 !important;
     color: var(--primary);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 700;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    gap: 3px;
 }
 .card-body .price p span {
-    text-decoration: line-through;
-    color: var(--dark);
+    color: #707070;
     font-weight: 500;
+    font-size: 14px;
 }
 
 /* .card-body .price a {
@@ -1866,9 +1869,9 @@ table th {
     background-color: #fff;
     padding: 8px;
     border-radius: 50%;
-    top: 45%;
-    left: 25px;
-    transform: translateY(-50%);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -65%);
     margin-bottom: 50px;
 }
 .llogo img {
@@ -1886,20 +1889,25 @@ table th {
     text-align: left;
     font-weight: bold;
     font-size: 22px;
+    margin-top: 25px;
 }
 
 .card.new .place {
-    color: #707070 !important;
+    color: var(--bs-red) !important;
+    font-weight: 600;
+}
+.card.new .place i {
+    margin-right: 5px;
 }
 
 .card.new .viewIt {
-    border-radius: 5px;
+    border-radius: 8px;
     /* margin-left: auto; */
     background-color: transparent !important;
     color: var(--primary) !important;
     font-weight: 550 !important;
     font-size: 16px;
-    padding: 7px 20px;
+    padding: 7px 20px !important;
 }
 .card.new .viewIt:hover {
     background-color: var(--primary) !important;
@@ -1907,8 +1915,22 @@ table th {
     border-color: var(--primary) !important;
 }
 
-.card.new .card-body {
-    text-align: left;
+.card.new .top .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--dark);
+    border-top: 1px solid #dddddd8a;
+    border-bottom: 1px solid #dddddd8a;
+    padding: 13px;
+}
+.card.new .top .info p {
+    margin-bottom: 0;
+}
+.card.new .top .info i {
+    margin-right: 8px;
+    color: var(--bs-red);
 }
 
 .card.new .top {
@@ -1916,6 +1938,7 @@ table th {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: column;
 }
 .card.new .top .offer {
     font-size: 16px;

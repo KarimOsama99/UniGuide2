@@ -1886,12 +1886,10 @@ table th {
     text-align: left;
     font-weight: bold;
     font-size: 22px;
-    margin-top: 20px;
-    border-radius: 50px !important;
 }
 
-.card-title.new .place {
-    color: #707070;
+.card.new .place {
+    color: #707070 !important;
 }
 
 .card.new .viewIt {

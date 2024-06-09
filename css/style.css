@@ -84,7 +84,7 @@ body {
 
 /*** Button ***/
 .btn {
-    font-family: 'BuloRounded', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -487,22 +487,25 @@ body {
 }
 
 .greenreg {
-    background-color: var(--primary) !important;
-    /* border-color: var(--green) !important; */
-    /* color: var(--red) !important; */
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+    color: var(--red) !important;
     font-family: 'Cairo', sans-serif !important;
     font-size: 18px;
     transition: all .3s;
+    height: 80px;
+    display: flex !important;
+    align-items: center;
 }
 .greenreg:hover {
-    color: var(--yellow) !important;
+    color: #fff !important;
 }
 .greenreg:hover i {
     transform: translateX(8px);
 }
 .greenreg i {
     transition: transform .3s;
-    color: var(--yellow) !important;
+    color: var(--red) !important;
 }
 
 /* FAQ */

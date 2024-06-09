@@ -486,9 +486,28 @@ body {
     color: var(--light) !important;
 }
 
+.greenreg {
+    background-color: var(--primary) !important;
+    /* border-color: var(--green) !important; */
+    /* color: var(--red) !important; */
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 18px;
+    transition: all .3s;
+}
+.greenreg:hover {
+    color: var(--green) !important;
+}
+.greenreg:hover i {
+    transform: translateX(8px);
+}
+.greenreg i {
+    transition: transform .3s;
+    color: var(--green) !important;
+}
+
 /* FAQ */
 .faq {
-    background-color: #181d38 ;
+    background-color: var(--primary) ;
     width: 100% !important;
     margin-top: 50px;
 }

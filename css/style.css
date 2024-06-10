@@ -34,7 +34,12 @@ body {
     right: 45px;
     bottom: 50px;
     border-radius: 50% !important;
+    background-color: var(--red) !important;
+    border-color: var(--bs-red) !important;
     z-index: 99;
+}
+.back-to-top:hover {
+    background-color: var(--bs-red) !important;
 }
 
 .whatsapp {
@@ -489,7 +494,7 @@ body {
 .greenreg {
     background-color: var(--green) !important;
     border-color: var(--green) !important;
-    color: var(--red) !important;
+    color: var(--dark) !important;
     font-family: 'Cairo', sans-serif !important;
     font-size: 18px;
     transition: all .3s;
@@ -497,9 +502,9 @@ body {
     display: flex !important;
     align-items: center;
 }
-.greenreg:hover {
-    color: #fff !important;
-}
+/* .greenreg:hover {
+    color: var(--primary) !important;
+} */
 .greenreg:hover i {
     transform: translateX(8px);
 }

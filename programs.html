@@ -28,7 +28,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="css/programs.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style_ar.css"> -->
 </head>
@@ -103,526 +102,149 @@
 
 
     <!-- Programs Start -->
-    <div id="page-wrap">
-        <div class="listLoader" style="display: none;">
-        <span class="loader "></span>
-        </div>
-        <section class="scholarships universties-list list-view container py-4 ">
-        <ul class="nav nav-tabs  transparent   mb-4 subNavs  justify-content-center tabs-main">
-        <li class="nav-item">
-        <a class="nav-link py-3  " href="university.html">Universities </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link py-3  active" href="#">Programs </a>
-        </li>
-        </ul>
-        <div class="d-flex justify-content-end d-lg-none showFIlter-wrap">
-        <button class="btn d-block d-lg-none showFIlter
-                    mx-auto my-2 mob-full-width sticky-sm-btn">Filter
-        <i class="fa fa-arrow-right"></i>
-        </button>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 customedInputs">
-                <form class="filterSide accordion border rounded p-3">
-                    <div class="inner">
-                    <div class="justify-content-end d-flex d-md-none">
-                    <span class="closeFilter med-title p-2">
-                    close
-                    <i class="fa fa-times"></i>
-                    </span>
+    <section class="programs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 search">
+                    <div class='search-box'>
+                        <form class='search-form'>
+                            <input class='form-control' placeholder='Search University By Name...' type='text'>
+                            <button class='btn btn-danger'>
+                                <i class='fas fa-search'></i>
+                            </button>
+                        </form>
                     </div>
-                    <script type="57607b7d89393c96d917a060-text/javascript">
-                                            let universtiesList = [{"value":6076,"name":"Bah\u00e7e\u015fehir Cyprus"},{"value":6075,"name":"ANKARA BILIM"},{"value":939,"name":"\u062c\u0627\u0645\u0639\u0629 \u0643\u0648\u062a\u0634"},{"value":940,"name":"\u062c\u0627\u0645\u0639\u0629 \u0628\u064a\u0644\u0643\u064a\u0646\u062a"},{"value":6079,"name":"Cyprus health and social science university"},{"value":6078,"name":"Kocaeli Sa\u011fl\u0131k ve Teknoloji \u00dcniversitesi"},{"value":6077,"name":"fenerbah\u00e7e"},{"value":6023,"name":"T\u00fcrk-Alman \u00dcniversitesi (TA\u00dc)"},{"value":6067,"name":"Girne American University"},{"value":6022,"name":"University of Kyrenia"},{"value":6068,"name":"Eastern Mediterranean University"},{"value":6021,"name":"Final International University"},{"value":6020,"name":"Near East University"},{"value":6069,"name":"Cyprus International University"},{"value":546,"name":"\u00d6zye\u011fin University"},{"value":533,"name":"IZMIR UNIVERSITY OF ECONOMICS"},{"value":528,"name":"Istanbul Sabahattin Zaim University"},{"value":557,"name":"YASAR"},{"value":536,"name":"Ko\u00e7 University"},{"value":521,"name":"\u0130stanbul Esenyurt university"},{"value":504,"name":"Bilkent University"},{"value":539,"name":"Lokman Hekim University"},{"value":764,"name":"Atlas University"},{"value":494,"name":"Ankara Medipol University"},{"value":517,"name":"Istanbul Arel University"},{"value":540,"name":"MALTEPE"},{"value":929,"name":"Topkapi University| Formerly Ivansaray University"},{"value":763,"name":"Ostim University"},{"value":502,"name":"Beykoz University"},{"value":524,"name":"Istanbul Kent University"},{"value":530,"name":"Istanbul Ticaret University"},{"value":497,"name":"At\u0131l\u0131m University"},{"value":548,"name":"Sabanci University"},{"value":522,"name":"\u0130stanbul Gedik University"},{"value":534,"name":"Kadir Has University"},{"value":491,"name":"Ac\u0131badem University"},{"value":514,"name":"IBN HALDUN"},{"value":938,"name":"Ya\u015far University"},{"value":558,"name":"Yeditepe University"},{"value":544,"name":"\u0130stanbul Okan University"},{"value":501,"name":"Istanbul Beykent University"},{"value":555,"name":"Uskudar University"},{"value":512,"name":"Hali\u00e7 University"},{"value":525,"name":"\u0130stanbul K\u00fclt\u00fcr University"},{"value":518,"name":"Istanbul Ayd\u0131n University"},{"value":520,"name":"Istanbul Bilgi University"},{"value":493,"name":"Altinbas University"},{"value":505,"name":"Biruni University"},{"value":531,"name":"Yeni Y\u00fczil University"},{"value":499,"name":"Bah\u00e7e\u015fehir University"},{"value":542,"name":"\u0130stanbul Ni\u015fanta\u015f\u0131 university"},{"value":515,"name":"I\u015fik University"},{"value":523,"name":"Istanbul Geli\u015fim University (IGU)"},{"value":532,"name":"\u0130stinye University"},{"value":526,"name":"Istanbul Medipol university"}];
-                                            let majorList = [{"value":1,"name":"Gastronomy and Culinary Arts"},{"value":2,"name":"Economy"},{"value":3,"name":"International Relations"},{"value":4,"name":"Management Information System"},{"value":5,"name":"Political Science and Public Administration"},{"value":6,"name":"Architecture"},{"value":7,"name":"Civil Engineering"},{"value":8,"name":"Computer Engineering"},{"value":10,"name":"Psychology"},{"value":12,"name":"Sociology"},{"value":13,"name":"Cinema And Television"},{"value":14,"name":"Interior Architecture and Environmental Design"},{"value":15,"name":"Jewelry Technology And Design"},{"value":16,"name":"Mechanical Engineering"},{"value":11,"name":"Industrial Engineering"},{"value":18,"name":"Medicine"},{"value":19,"name":"Dentistry"},{"value":17,"name":"Software Engineering"},{"value":9,"name":"Electrical and Electronic Engineering"},{"value":22,"name":"International Logistics and Management"},{"value":23,"name":"International Trade"},{"value":24,"name":"Law"},{"value":27,"name":"English Translation and Interpreting"},{"value":28,"name":"International Trade and Finance"},{"value":25,"name":"Film Making"},{"value":26,"name":"New Media and Communication Systems"},{"value":29,"name":"Political Science and international Relations"},{"value":30,"name":"Ergotherapy"},{"value":31,"name":"Midwifery"},{"value":32,"name":"Nursing"},{"value":33,"name":"Public Relation and Advertisement"},{"value":34,"name":"Nutrition and Dietetics"},{"value":36,"name":"Speech and Language Therapy"},{"value":35,"name":"Physiotherapy and Rehabilitation"},{"value":38,"name":"Airframe and Powerplant Maintenance"},{"value":39,"name":"Aviation Management"},{"value":41,"name":"Flight Training"},{"value":37,"name":"Audiology"},{"value":40,"name":"Avioincs"},{"value":43,"name":"English Language and Literature"},{"value":44,"name":"Automotive Engineering"},{"value":45,"name":"Chemical Engineering"},{"value":47,"name":"Fashion And Textile Design"}];
-                                            var searchFilters = [];
-                                        </script>
-                    <div class="mb-3" id="searchUniversity" method="POST" action="">
-                    <input class="form-control bg-transparent " name="search" id="university-autocomplete-input" placeholder="Search by University ...">
+                </div>
+                <div class="col-md-12 filters">
+                    <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Study Level
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bachelor</a></li>
+                                <li><a class="dropdown-item" href="#">Master With Thesis</a></li>
+                                <li><a class="dropdown-item" href="#">Vocational School</a></li>
+                                <li><a class="dropdown-item" href="#">PHD</a></li>
+                                <li><a class="dropdown-item" href="#">Master Without Thesis</a></li>
+                                <li><a class="dropdown-item" href="#">Integrated PHD</a></li>
+                            </ul>
                     </div>
-                    <div class="accordion-item pb-2 filter">
-                    <a class="accordion__title cursor-pointer py-2  d-block mb-2   med-title bold " data-toggle="collapse" data-target="#collapse_a1" aria-expanded="true" class>
-                    Study Level
-                    <span class="arrow"></span>
-                    </a>
-                    <div class="filters collapse show" id="collapse_a1" aria-labelledby="heading_a1">
-                    <label class="theInput checkbox">
-                    <span class="name">Bachelor</span>
-                    <input type="checkbox" name="studyLevel" value="1">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Master With Thesis</span>
-                    <input type="checkbox" name="studyLevel" value="2">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Vocational School</span>
-                    <input type="checkbox" name="studyLevel" value="3">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">PHD</span>
-                    <input type="checkbox" name="studyLevel" value="4">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Master Without Thesis</span>
-                    <input type="checkbox" name="studyLevel" value="5">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Integrated PHD</span>
-                    <input type="checkbox" name="studyLevel" value="6">
-                    <span class="checkmark"></span>
-                    </label>
+                    <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Study Major
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Gastronomy and Culinary Arts</a></li>
+                                <li><a class="dropdown-item" href="#">Economy</a></li>
+                                <li><a class="dropdown-item" href="#">International Relations</a></li>
+                                <li><a class="dropdown-item" href="#">Management and Information Systems</a></li>
+                                <li><a class="dropdown-item" href="#">Political Science and Public Administration</a></li>
+                            </ul>
                     </div>
+                    <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Languages
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Turkish</a></li>
+                                <li><a class="dropdown-item" href="#">Germany</a></li>
+                            </ul>
                     </div>
-                    <div class="accordion-item pb-2 filter">
-                    <a class="accordion__title cursor-pointer py-2 d-block mb-2  med-title bold " data-toggle="collapse" data-target="#collapse_a2" aria-expanded="true" class>
-                    Study Major
-                    <span class="arrow"></span>
-                    </a>
-                    <div class="filters collapse show" id="collapse_a2" aria-labelledby="heading_a2">
-                    <div class="mb-3" id="searchMajor" method="POST" action="">
-                    <input class="form-control bg-transparent " name="search" filterName="studyMajor" id="major-autocomplete-input" placeholder="Search by Major ...">
+                    <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Study Duration
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">2 Years</a></li>
+                                <li><a class="dropdown-item" href="#">4 Years</a></li>
+                                <li><a class="dropdown-item" href="#">5 Years</a></li>
+                                <li><a class="dropdown-item" href="#">7 Years</a></li>
+                            </ul>
                     </div>
-                    <div class="theActieNow">
-                    <label class="theInput checkbox">
-                    <span class="name">
-                    Gastronomy and Culinary Arts
-                    </span>
-                    <input type="checkbox" name="studyMajor" value="1">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">
-                    Economy
-                    </span>
-                    <input type="checkbox" name="studyMajor" value="2">
-                    <span class="checkmark"></span>
-                    </label>
+                    <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fees
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1000$ - 2000$</a></li>
+                                <li><a class="dropdown-item" href="#">2000$ - 3000$</a></li>
+                                <li><a class="dropdown-item" href="#">3000$ - 4000$</a></li>
+                            </ul>
                     </div>
-                    <div id="more" class="collapse">
-                    <label class="theInput checkbox">
-                    <span class="name">
-                    International Relations
-                    </span>
-                    <input type="checkbox" name="studyMajor" value="3">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">
-                    Management Information System
-                    </span>
-                    <input type="checkbox" name="studyMajor" value="4">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">
-                    Political Science and Public Administration
-                    </span>
-                    <input type="checkbox" name="studyMajor" value="5">
-                    <span class="checkmark"></span>
-                    </label>
+                </div>
+                <div class="col-md-12 mt-5 pt-5 filteredItems allwrps">
+                                <a href="details.html">
+                <div data-menu="iran" class="card new">
+                        <img src="img/glishim.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>50% Off</span>
+                        <div class="llogo">
+                        <img src="img/glishimlogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Glishim University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Iran</p>
                     </div>
-                    <span class="cursor-pointer text-clr py-3 d-block collapsed show-more" data-toggle="collapse" data-target="#more">
-                    <span class="more"> show More &gt;</span>
-                    <span class="less"> show Less &gt;</span>
-                    </span>
-                    </div>
-                    </div>
-                    <div class="accordion-item pb-2 filter">
-                    <a class="accordion__title cursor-pointer py-2  d-block mb-2   med-title bold " data-toggle="collapse" data-target="#collapse_a3" aria-expanded="true" class>
-                    Study Duration
-                    <span class="arrow"></span>
-                    </a>
-                    <div class="filters collapse show" id="collapse_a3" aria-labelledby="heading_a3">
-                    <label class="theInput checkbox">
-                    <span class="name"> -
-                    years
-                    </span>
-                    <input type="checkbox" name="studyduration" value="-">
-                    <span class="checkmark"></span>
-                    </label>
-                    </div>
-                    </div>
-                    <div class="accordion-item pb-2 filter">
-                    <a class="accordion__title cursor-pointer py-2   d-block mb-2   med-title bold " data-toggle="collapse" data-target="#collapse_a4" aria-expanded="true" class>
-                    Languages
-                    <span class="arrow"></span>
-                    </a>
-                    <div class="filters collapse show" id="collapse_a4" aria-labelledby="heading_a4">
-                    <label class="theInput checkbox">
-                    <span class="name">Turkish</span>
-                    <input type="checkbox" name="Language" value="1">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">English</span>
-                    <input type="checkbox" name="Language" value="2">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">30% English</span>
-                    <input type="checkbox" name="Language" value="3">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">30% Germany</span>
-                    <input type="checkbox" name="Language" value="4">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">English, Turkish</span>
-                    <input type="checkbox" name="Language" value="5">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Arabic</span>
-                    <input type="checkbox" name="Language" value="6">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Turkish - Russian</span>
-                    <input type="checkbox" name="Language" value="7">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">30% Arabic</span>
-                    <input type="checkbox" name="Language" value="8">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">Chinese</span>
-                    <input type="checkbox" name="Language" value="9">
-                    <span class="checkmark"></span>
-                    </label>
-                    <label class="theInput checkbox">
-                    <span class="name">French</span>
-                    <input type="checkbox" name="Language" value="10">
-                    <span class="checkmark"></span>
-                    </label>
-                    </div>
-                    </div>
-                    <div class="accordion-item pb-2 filter">
-                    <a class="accordion__title cursor-pointer py-2
-                                                d-block mb-2
-                                                med-title bold " data-toggle="collapse" data-target="#collapse_a5" aria-expanded="true" class>
-                    Fees
-                    <span class="arrow"></span>
-                    </a>
-                    <div class="filters collapse show" id="collapse_a5" aria-labelledby="heading_a5">
-                    <label class="theInput checkbox">
-                    <span class="name"> $ - $ </span>
-                    <input type="checkbox" name="fees" value="-">
-                    <span class="checkmark"></span>
-                    </label>
-                    </div>
-                    </div>
-                    </div>
-                    <button type="submit" class="d-md-none d-block btn   W-100 mob-full-width  my-2 ">
-                    Submit
-                    </button>
-                </form>
-            </div>
-            <div class=" col-lg-9 filteredItemsView">
-            <div class="d-flex w-100 flex-md-row flex-column  align-items-center justify-content-between    my-3 view-bar">
-            <div>
-            <span class="d-inline-block mb-2 mb-md-0 totalFound">
-            We Found
-            <span class="count">
-            4603/4603</span>
-            Universities for you</span>
-
-            <a class="clearAll my-2 my-md-0 ml-3 d-none" href="programs.html">
-            Clear All</a>
-            </div>
-            </div>
-            <div class="d-flex w-100 align-items-start  justify-content-between   my-3 flex-column flex-md-row">
-            <div class="d-flex align-items-start side1">
-
-            <div class="addedFilters  hide  d-flex align-items-start pr-md-3 flex-column flex-md-row ">
-            <span class="bold fit-wdth txt d-inline-block mr-2 pt-1">
-            Filter By
-            </span>
-            <div class="theFilters d-flex flex-wrap  align-items-center">
-
-            </div>
-            </div>
-            </div>
-            <div class="align-items-center d-flex fit-wdth   justify-content-end side2 ">
-            <a href="#" class="btn bg-white  pdf-download    w-border ml-2 ml-md-0 ">
-            Download PDF
-            <i class="fa fa-file-pdf-o ml-1"></i>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>Students</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>Programs</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">Starting From</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">View Details</a></div>
+                        </div>
+                </div>
             </a>
-            </div>
-            </div>
-            <div class="list my-3 " id="pdf">
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/turkey.png" class="ico mr-1" alt="Turkish">
-            Turkish
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            Gastronomy and Culinary Arts
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png" />
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
+            <a href="details.html">
+                <div data-menu="turkey" class="card new">
+                        <img src="img/ankara.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>50% Off</span>
+                        <div class="llogo">
+                        <img src="img/ankaralogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Ankara University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Turkey</p>
+                    </div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>Students</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>Programs</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">Starting From</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">View Details</a></div>
+                        </div>
+                </div>
             </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">3500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
+            <a href="details.html">
+                <div data-menu="germany" class="card new">
+                        <img src="img/istanbul.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>50% Off</span>
+                        <div class="llogo">
+                        <img src="img/istanbullogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Istanbul University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Germany</p>
+                    </div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>Students</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>Programs</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">Starting From</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">View Details</a></div>
+                        </div>
+                </div>
             </a>
-            </div>
-            </div>
-            </div>
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/flag.png" data-src="https://studyfans.com/storage/illustration-uk-flag-53876-18166.webp" class="ico mr-1" alt="English">
-            English
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            Economy
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png">
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
-            </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">3500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
-            </a>
-            </div>
-            </div>
-            </div>
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/flag.png" class="ico mr-1" alt="English">
-            English
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            International Relations
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png">
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
-            </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">3500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
-            </a>
-            </div>
-            </div>
-            </div>
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/turkey.png" class="ico mr-1" alt="Turkish">
-            Turkish
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            Management Information System
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png">
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
-            </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">3500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
-            </a>
-            </div>
-            </div>
-            </div>
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/flag.png" class="ico mr-1" alt="English">
-            English
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            Political Science and Public Administration
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png">
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
-            </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">3500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
-            </a>
-            </div>
-            </div>
-            </div>
-            <div class="university p-3 boxed mb-4 ">
-            <div class="tags bold small">
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(198, 96, 94, 0.078) ">
-            <img data-class="LazyLoad" src="img/uni.png" class="ico mr-1" alt="Bachelor">
-            Bachelor
-            </span>
-            <span class="tag mr-md-2 mr-1 mb-2 " style="background-color: rgba(63,81, 181, 0.078) ">
-            <img data-class="LazyLoad" src="img/flag.png" class="ico mr-1" alt="English">
-            English
-            </span>
-            </div>
-            <div class="d-flex align-items-start row my-2">
-            <div class="col-md-7 pr-md-0">
-            <h2 class="title med-title my-2 bold">
-            Architecture
-            </h2>
-            <div class="d-flex align-items-center">
-            <img class="logo mr-2 " alt="Altinbas University" data-class="LazyLoad" src="img/uni.png">
-            <h4 class="normal name">
-            <a href="universties/493.html">
-            Altinbas University
-            </a>
-            </h4>
-            </div>
-            </div>
-            <div class="align-items-center col-md-5 d d-flex flex-md-row justify-content-between justify-content-md-end prices py-2 pz-3 w-100">
-            <span class="bold d-flex flex-md-column
-                        justify-content-end med-title
-                        mr-md-4 price text-right">
-            <span class="before mr-2 mr-md-0">
-            8500 USD
-            </span>
-            <span class="after">4500 USD</span>
-            </span>
-            <a href="details.html#registerForm" class="btn    my-2 w-border">
-            Register now
-            </a>
-            </div>
-            </div>
-            </div>
-            <div class="page-pagination text-right">
-            <nav>
-            <ul class="pagination">
-            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
-            <span class="page-link" aria-hidden="true">&lsaquo;</span>
-            </li>
-            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-            <li class="page-item"><a class="page-link" href="programs4658.html?page=2">2</a></li>
-            <li class="page-item"><a class="page-link" href="programs9ba9.html?page=3">3</a></li>
-            <li class="page-item"><a class="page-link" href="programsfdb0.html?page=4">4</a></li>
-            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
-            <li class="page-item"><a class="page-link" href="programs80c3.html?page=92">92</a></li>
-            <li class="page-item"><a class="page-link" href="programs6f72.html?page=93">93</a></li>
-            <li class="page-item">
-            <a class="page-link" href="programs4658.html?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
-            </li>
-            </ul>
-            </nav>
-            </div>
-            </div>
+                </div>
             </div>
         </div>
-        </section>
-    </div>
+    </section>
 
     <!-- Programs End -->
         
@@ -674,7 +296,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
         <!-- WhatsApp -->
     <a href="#" class="whatsapp progwhats"><i class="fab fa-whatsapp fa-2x"></i></a>
@@ -682,18 +304,15 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js" integrity="sha512-Pv/SmxhkTB6tWGQWDa6gHgJpfBdIpyUy59QkbshS1948GRmj6WgZz18PaDMOqaEyKLRAvgil7sx/WACNGE4Txw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="lib/wow/wow.min.js"></script> -->
-    <!-- <script src="lib/easing/easing.min.js"></script> -->
-    <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <!-- <script src="js/filter.js"></script> -->
+    <script src="js/filter.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/programs.js"></script>
-    <script src="js/filterSide.js"></script>
 </body>
 
 </html>

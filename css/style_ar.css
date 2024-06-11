@@ -4,6 +4,7 @@
 body {
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
+    text-align: right;
 }
 .ltr {
     direction: ltr !important;
@@ -108,6 +109,10 @@ body {
     margin-right: 10px;
 }
 
+.greenreg:hover i {
+    transform: translateX(-8px) rotate(180deg);
+}
+
 
 .card-title,
 .card-body {
@@ -181,5 +186,23 @@ body.showFilter .filterSide {
 }
 .majorr {
     left: unset !important;
-    right: 10px;
+    right: -37px;
+    transform: rotate(45deg) !important;
+}
+
+.card.new .place i {
+    margin-right: unset !important;
+    margin-left: 5px;
+}
+.card.new .top .info i {
+    margin-right: unset !important;
+    margin-left: 8px;
+}
+
+.card-body .price p span {
+    font-size: 16px;
+}
+
+.menu .active u {
+    text-align: right;
 }

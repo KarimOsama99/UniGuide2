@@ -405,17 +405,17 @@
             <div class="row">
                 <div class="col-md-4 counter">
                     <i class="fas fa-user-graduate"></i>
-                    <span>+5,000</span>
+                    <span id="nums" data-val="1050">+5,000</span>
                     <p>طلاب</p>
                 </div>
                 <div class="col-md-4 counter">
                     <i class="fas fa-place-of-worship"></i>
-                    <span>+1,000</span>
+                    <span id="nums" data-val="800">+1,000</span>
                     <p>جامعات</p>
                 </div>
                 <div class="col-md-4 counter">
                     <i class="fas fa-cubes"></i>
-                    <span>+2,500</span>
+                    <span id="nums" data-val="750">+2,500</span>
                     <p>برامج</p>
                 </div>
             </div>
@@ -436,183 +436,205 @@
             <button type="button" data-menu="iran"><img src="img/iran.webp" alt="iran" />ايران</button>
             <button type="button" data-menu="germany"><img src="img/germany.png" alt="germany" />المانيا</button>
         </div>
-        <div class="container allwrps gapp">
-
-        <div data-menu="egypt" class="card new">
-                <a href="details.html">
-                    <img src="img/bekoz.webp" alt="uni1" />
-                </a>
-                <span class="majorr"><i class="fas fa-university"></i>Bachelor</span>
-                <div class="llogo">
-                  <img src="img/unilogo.webp" alt="logo">
+        <div class="container allwrps">
+            <a href="details.html">
+                <div data-menu="egypt" class="card new">
+                        <img src="img/bekoz.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/unilogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Bekoz University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Egypt</p>
+                            </div>
+                            <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                    <a href="details.html">
-                      <h5 class="card-title new">جامعة بيكوز</h5>
-                    </a>
-                      <p class="place">Egypt - Cairo</p>
-                    </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
-                </div>
-        </div>
-        <div data-menu="turkey" class="card new">
+            </a>
+            <a href="details.html">
+                <div data-menu="turkey" class="card new">
                 <img src="img/ankara.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Master With Theis</span>
+                <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
                 <div class="llogo">
                   <img src="img/ankaralogo.webp" alt="logo">
                 </div>
                 <div class="card-body">
                   <div class="top">
                     <div>
-                      <h5 class="card-title new">جامعة أنقرة</h5>
-                      <p class="place">Egypt - Cairo</p>
+                        <h5 class="card-title new">Ankara University</h5>
+                        <p class="place"><i class="fas fa-map-marker-alt"></i>Turkey</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
                 </div>
-        </div>
-        <div data-menu="iran" class="card new">
-                <img src="img/glishim.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>PHD</span>
-                <div class="llogo">
-                  <img src="img/glishimlogo.webp" alt="logo">
                 </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة جليشيم</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="iran" class="card new">
+                        <img src="img/glishim.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/glishimlogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Glishim University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Iran</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="turkey" class="card new">
-                <img src="img/ankara.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Master With Thesis</span>
-                <div class="llogo">
-                  <img src="img/ankaralogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة أنقرة</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="turkey" class="card new">
+                        <img src="img/ankara.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/ankaralogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Ankara University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Turkey</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="germany" class="card new">
-                <img src="img/istanbul.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Integrated PHD</span>
-                <div class="llogo">
-                  <img src="img/istanbullogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة اسطنبول</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="germany" class="card new">
+                        <img src="img/istanbul.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/istanbullogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Istanbul University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Germany</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="egypt" class="card new">
-                <img src="img/bekoz.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Bachelor</span>
-                <div class="llogo">
-                  <img src="img/unilogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة بيكوز</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="egypt" class="card new">
+                        <img src="img/bekoz.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/unilogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Bekoz University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Egypt</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="turkey" class="card new">
-                <img src="img/bekent.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Master Without Thesis</span>
-                <div class="llogo">
-                  <img src="img/bekentlogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة بيكنت</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="turkey" class="card new">
+                        <img src="img/bekent.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/bekentlogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Bekent University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Turkey</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="germany" class="card new">
-                <img src="img/khalig.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Vocational School</span>
-                <div class="llogo">
-                  <img src="img/khaliglogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة الخليج</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+            <a href="details.html">
+                <div data-menu="germany" class="card new">
+                        <img src="img/khalig.webp" alt="uni1" />
+                        <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                        <div class="llogo">
+                        <img src="img/khaliglogo.webp" alt="logo">
+                        </div>
+                        <div class="card-body">
+                        <div class="top">
+                            <div>
+                            <h5 class="card-title new">Khalig University</h5>
+                            <p class="place"><i class="fas fa-map-marker-alt"></i>Germany</p>
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
-                    </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                        </div>
                 </div>
-        </div>
-        <div data-menu="germany" class="card new">
-                <img src="img/khalig.webp" alt="uni1" />
-                <span class="majorr"><i class="fas fa-university"></i>Vocational School</span>
-                <div class="llogo">
-                  <img src="img/khaliglogo.webp" alt="logo">
-                </div>
-                <div class="card-body">
-                  <div class="top">
-                    <div>
-                      <h5 class="card-title new">جامعة الخليج</h5>
-                      <p class="place">Egypt - Cairo</p>
+            </a>
+        <a href="details.html">
+            <div data-menu="germany" class="card new">
+                    <img src="img/khalig.webp" alt="uni1" />
+                    <span class="majorr"><i class="fas fa-tag"></i>خصم 50%</span>
+                    <div class="llogo">
+                    <img src="img/khaliglogo.webp" alt="logo">
                     </div>
-                    <div class="khasm">
-                      <p class="offer"><i class="fas fa-tags"></i>50% Off</p>
+                    <div class="card-body">
+                    <div class="top">
+                        <div>
+                        <h5 class="card-title new">Khalig University</h5>
+                        <p class="place"><i class="fas fa-map-marker-alt"></i>Germany</p>
                     </div>
-                  </div>
-                  <div class="price pt-3 pb-2"><p><span>6000 USD</span>4320 USD</p> <a href="./details.html" class="btn btn-primary viewIt">عرض</a></div>
-                </div>
-        </div>
+                    <div class="info">
+                            <p><i class="fas fa-user-friends"></i>27423 <span>طلاب</span></p>
+                            <p><i class="fas fa-graduation-cap"></i>78 <span>برامج</span></p>
+                            </div>
+                        </div>
+                        <div class="price pt-3 pb-2"><p><span class="text-black-50">تبدأ من</span>$4320</p> <a href="./details.html" class="btn btn-primary viewIt">عرض الخصائص</a></div>
+                    </div>
+            </div>
+        </a>
     </div>
     <div class="center">
     <a href="./university.html"  class="btn btn-primary seeAll mt-5">شاهد جميع الجامعات <i class="fas fa-angle-double-right"></i></a>
@@ -705,7 +727,7 @@
                     <p>تعرف على كل شيء عن الدراسة في مصر من خلال Uniguide للدراسة في الجامعات المصرية الخاصة، بخبرة تزيد عن 8 سنوات وخدمات استشارية متخصصة مع أكثر من 250 وكيلًا حول العالم.</p>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3">التواصل</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -717,7 +739,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeIn pb-2" data-wow-delay="0.1s">
-                    <h4 class="text-white mb-3">Location</h4>
+                    <h4 class="text-white mb-3">موقعنا</h4>
                     <iframe class="position-relative rounded w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
                         frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
@@ -756,6 +778,7 @@
     <!-- Template Javascript -->
     <script src="js/filter.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/counters.js"></script>
 </body>
 
 </html>

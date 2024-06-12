@@ -206,3 +206,8 @@ body.showFilter .filterSide {
 .menu .active u {
     text-align: right;
 }
+
+.search .btn-danger  {
+    right: unset !important;
+    left: 0 !important;
+}

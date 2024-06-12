@@ -28,6 +28,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style_ar.css"> -->
 </head>
@@ -117,61 +118,52 @@
                 </div>
                 <div class="col-md-12 filters">
                     <div class="btn-group">
-                        <button class="btn btn-bs-red dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Study Level
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Bachelor</a></li>
-                                <li><a class="dropdown-item" href="#">Master With Thesis</a></li>
-                                <li><a class="dropdown-item" href="#">Vocational School</a></li>
-                                <li><a class="dropdown-item" href="#">PHD</a></li>
-                                <li><a class="dropdown-item" href="#">Master Without Thesis</a></li>
-                                <li><a class="dropdown-item" href="#">Integrated PHD</a></li>
-                            </ul>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="" selected disabled>Study Level</option>
+                            <option value="BA">Bachelor</option>
+                            <option value="MA">Master With Thesis</option>
+                            <option value="VO">Vocational School</option>
+                            <option value="PH">PHD</option>
+                            <option value="MW">Master Without Thesis</option>
+                            <option value="IN">Integrated PHD</option>
+                        </select>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-bs-red dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Study Major
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Gastronomy and Culinary Arts</a></li>
-                                <li><a class="dropdown-item" href="#">Economy</a></li>
-                                <li><a class="dropdown-item" href="#">International Relations</a></li>
-                                <li><a class="dropdown-item" href="#">Management and Information Systems</a></li>
-                                <li><a class="dropdown-item" href="#">Political Science and Public Administration</a></li>
-                            </ul>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="" selected disabled>Study Major</option>
+                            <option value="BA">Gastronomy and Culinary Arts</option>
+                            <option value="MA">Economy</option>
+                            <option value="VO">International Relations</option>
+                            <option value="PH">Management and Information Systems</option>
+                            <option value="MW">Political Science and Public Administration</option>
+                        </select>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-bs-red dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Languages
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Turkish</a></li>
-                                <li><a class="dropdown-item" href="#">Germany</a></li>
-                            </ul>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="" selected disabled>Languages</option>
+                            <option value="BA">Arabic</option>
+                            <option value="MA">English</option>
+                            <option value="VO">Turkish</option>
+                            <option value="PH">Germany</option>
+                        </select>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-bs-red dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Study Duration
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">2 Years</a></li>
-                                <li><a class="dropdown-item" href="#">4 Years</a></li>
-                                <li><a class="dropdown-item" href="#">5 Years</a></li>
-                                <li><a class="dropdown-item" href="#">7 Years</a></li>
-                            </ul>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="" selected disabled>Study Duration</option>
+                            <option value="BA">2 Years</option>
+                            <option value="MA">4 Years</option>
+                            <option value="VO">5 Years</option>
+                            <option value="PH">7 Years</option>
+                        </select>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-bs-red dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Fees
-                        </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">1000$ - 2000$</a></li>
-                                <li><a class="dropdown-item" href="#">2000$ - 3000$</a></li>
-                                <li><a class="dropdown-item" href="#">3000$ - 4000$</a></li>
-                            </ul>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="" selected disabled>Fees</option>
+                            <option value="BA">1000$ - 2000$</option>
+                            <option value="MA">2000$ - 3000$</option>
+                            <option value="VO">3000$ - 4000$</option>
+                            <option value="PH">4000$ - 5000$</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-12 mt-5 pt-5 filteredItems allwrps">
@@ -296,7 +288,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-bs-red btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
         <!-- WhatsApp -->
     <a href="#" class="whatsapp progwhats"><i class="fab fa-whatsapp fa-2x"></i></a>
@@ -309,10 +301,14 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/filter.js"></script>
     <script src="js/main.js"></script>
+    <script>$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});</script>
 </body>
 
 </html>

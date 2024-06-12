@@ -19,4 +19,9 @@ $(function () {
     $(".menu p").click(function () {
       $(this).addClass("active").siblings().removeClass("active");
     });
+
+    $(".select2-container--default .select2-selection--single").click(function () {
+      $(this).addClass("active");
+    });
+
 });

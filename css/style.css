@@ -2088,6 +2088,12 @@ table th {
     color: var(--primary) !important;
     font-weight: 650;
 }
+.select2-container--default .select2-selection--single.active {
+    background-color: var(--light);
+    border-color: var(--primary);
+    color: var(--primary) !important;
+    font-weight: 650;
+}
 .select2-container--default .select2-selection--single:hover .select2-selection__rendered {
     color: #707070;
 }

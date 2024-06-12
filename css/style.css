@@ -1150,10 +1150,11 @@ h1, h2, h3, h4, h5 {
 
 /* Details */
 .uni8 {
-    box-shadow: 0 6px 20px rgba(0,0,0,.10196);
+    /* box-shadow: 0 6px 20px rgba(0,0,0,.10196); */
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--light);
+    margin-bottom: 25px;
 }
 .uni8 .uimg {
     width: 100%;
@@ -1168,7 +1169,7 @@ h1, h2, h3, h4, h5 {
 }
 .uni8 .content {
     padding-left: 15px;
-    border-bottom: 1px solid var(--light);
+    /* border-bottom: 1px solid var(--light); */
 }
 .imgbutton {
     position: relative;
@@ -1184,8 +1185,8 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     gap: 10px;
 }
-.uni8 .content p {
-    color: gray;
+.uni8 .content p, .uni8 .content a {
+    color: gray !important;
     font-size: 18px;
 }
 .uni8 .content p span {
@@ -1214,7 +1215,7 @@ h1, h2, h3, h4, h5 {
 }
 .imgbox {
     position: relative;
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/1.من\ نحن.png);
+    /* background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/1.من\ نحن.png); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1225,7 +1226,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 .imgbox.height {
-    height: 350px !important;
+    height: 325px !important;
 }
 .imgbox.height .play {
     top: 35% !important;
@@ -1258,9 +1259,9 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     border-radius: 5px;
 }
-.imgbox img:hover {
+/* .imgbox img:hover {
     transform: scale(1.125);
-}
+} */
 .imgbox:hover .play {
     color: var(--green) !important;
 }

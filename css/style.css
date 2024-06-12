@@ -2068,6 +2068,18 @@ table th {
     align-items: center;
     justify-content: center;
 }
+.filters .btn-group .btn-bs-red {
+    background-color: transparent;
+    border: 1px solid var(--bs-red);
+    transition: all .25s;
+}
+.filters .btn-group .btn-bs-red:active,
+.filters .btn-group .btn-bs-red:hover,
+.filters .btn-group .btn-bs-red:focus {
+    background-color: var(--bs-red);
+    box-shadow: none;
+    color: #fff;
+}
 .filters .dropdown-item {
     padding: 8px 10px;
     font-size: 16px;

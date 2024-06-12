@@ -137,6 +137,7 @@ body {
 .flags {
     padding: 15px;
     z-index: 99999;
+    cursor: pointer;
 }
 .flags img {
     width: 25px;
@@ -2101,6 +2102,7 @@ table th {
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 50%;
     transform: translateY(-50%);
+    right: 5px;
 }
 .select2-container--default .select2-search--dropdown .select2-search__field:focus {
     outline: none;

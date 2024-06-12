@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-md-12 filters">
                     <div class="btn-group">
-                        <select class="js-example-basic-single" name="state">
+                        <select class="js-example-basic-single" name="state" id="level">
                             <option value="" selected disabled>Study Level</option>
                             <option value="BA">Bachelor</option>
                             <option value="MA">Master With Thesis</option>
@@ -129,7 +129,7 @@
                         </select>
                     </div>
                     <div class="btn-group">
-                        <select class="js-example-basic-single" name="state">
+                        <select class="js-example-basic-single" name="state" id="major">
                             <option value="" selected disabled>Study Major</option>
                             <option value="BA">Gastronomy and Culinary Arts</option>
                             <option value="MA">Economy</option>
@@ -139,7 +139,7 @@
                         </select>
                     </div>
                     <div class="btn-group">
-                        <select class="js-example-basic-single" name="state">
+                        <select class="js-example-basic-single" name="state" id="lang">
                             <option value="" selected disabled>Languages</option>
                             <option value="BA">Arabic</option>
                             <option value="MA">English</option>
@@ -148,7 +148,7 @@
                         </select>
                     </div>
                     <div class="btn-group">
-                        <select class="js-example-basic-single" name="state">
+                        <select class="js-example-basic-single" name="state" id="duration">
                             <option value="" selected disabled>Study Duration</option>
                             <option value="BA">2 Years</option>
                             <option value="MA">4 Years</option>
@@ -157,7 +157,7 @@
                         </select>
                     </div>
                     <div class="btn-group">
-                        <select class="js-example-basic-single" name="state">
+                        <select class="js-example-basic-single" name="state" id="fees">
                             <option value="" selected disabled>Fees</option>
                             <option value="BA">1000$ - 2000$</option>
                             <option value="MA">2000$ - 3000$</option>
@@ -301,10 +301,9 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/filter.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
     <script>$(document).ready(function() {
     $('.js-example-basic-single').select2();

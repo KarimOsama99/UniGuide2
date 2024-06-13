@@ -2203,9 +2203,9 @@ table th {
 }
 .search input:focus {
   box-shadow: none;
-  border-color: var(--bs-red);
+  border-color: var(--primary);
 }
-.search .btn-danger {
+.search .btn-primary {
   position: absolute;
   top: 50%;
   right: 0;

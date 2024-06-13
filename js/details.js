@@ -22,6 +22,7 @@ $(function () {
 
     $(".select2-container--default .select2-selection--single").click(function () {
       $(this).addClass("active");
+      // $(".select2-selection__arrow b").addClass("active");
     });
 
 });

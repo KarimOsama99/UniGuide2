@@ -213,10 +213,16 @@ body {
   font-size: 16px;
   margin-bottom: 10px;
   list-style: none;
+  display: flex;
 }
 .aboutList li:before {
   content: "\2705";
   margin-right: 5px;
+  display: flex;
+}
+.aboutList.tiny li {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 /*** Navbar ***/
@@ -429,6 +435,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.page-header.faqH {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url(../img/course-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header.agentH {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url(../img/cat-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .page-header-inner {
   background: rgba(15, 23, 43, 0.7);
 }
@@ -550,16 +570,43 @@ body {
   color: var(--green);
   margin-bottom: 20px;
 }
+.faq.agent h2 {
+  color: var(--green);
+  margin-bottom: 20px;
+}
+.faq.agent {
+  background-color: unset;
+  padding: 25px;
+}
+.faq.agent .get-in-touch {
+  border-radius: 10px !important;
+  padding: 25px;
+}
 .faq .get-in-touch .col-md-6::before {
-  background-color: #181d38;
+  content: "";
+  background-color: var(--primary);
   width: 150vw;
   left: -50vw;
   top: -15px;
   height: calc(100% + 20px);
   position: absolute;
-  content: "";
   z-index: -1;
 }
+
+/* .videoAbsolute {
+  position: absolute;
+  width: 45%;
+  right: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+
+.btn-close {
+  filter: invert(1);
+  transform: translate(-5px, 20px);
+}
+
 .faq ul li {
   margin-bottom: 8px;
   font-size: 18px;
@@ -570,6 +617,12 @@ body {
   }
   .faq ul li {
     font-size: 16px;
+  }
+  .faq.agent {
+    padding: 0;
+  }
+  .faq.agent .get-in-touch {
+    overflow: visible !important;
   }
 }
 .faq ul li i {
@@ -1560,9 +1613,9 @@ h5 {
   color: gray;
 }
 
-/* table */
+/* .dormi table */
 
-table {
+.dormi table {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -1571,24 +1624,24 @@ table {
   table-layout: fixed;
 }
 
-table caption {
+.dormi table caption {
   font-size: 1.5em;
   margin: 0.5em 0 0.75em;
 }
 
-table tr {
+.dormi table tr {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0.35em;
 }
 
-table th,
-table td {
+.dormi table th,
+.dormi table td {
   padding: 0.625em;
   text-align: center;
 }
 
-table th {
+.dormi table th {
   font-size: 0.85em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1597,15 +1650,15 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
-  table {
+  .dormi table {
     border: 0;
   }
 
-  table caption {
+  .dormi table caption {
     font-size: 1.3em;
   }
 
-  table thead {
+  .dormi table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1616,22 +1669,22 @@ table th {
     width: 1px;
   }
 
-  table tr {
+  .dormi table tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: 0.625em;
   }
 
-  table td {
+  .dormi table td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: 0.8em;
     text-align: right;
   }
 
-  table td::before {
+  .dormi table td::before {
     /*
-    * aria-label has no advantage, it won't be read inside a table
+    * aria-label has no advantage, it won't be read inside a .dormi table
     content: attr(aria-label);
     */
     content: attr(data-label);
@@ -1641,7 +1694,7 @@ table th {
     color: var(--primary);
   }
 
-  table td:last-child {
+  .dormi table td:last-child {
     border-bottom: 0;
   }
 }
@@ -2172,7 +2225,7 @@ table th {
   transition: all 0.25s;
 }
 .select2-container--default
-  .select2-results__option--highlighted.select2-results__option--selectable {
+  .select2-results__option--highlighted.select2-results__option--selec.dormi table {
   background-color: var(--light);
   padding: 10px;
   color: var(--primary);
@@ -2226,4 +2279,9 @@ table th {
 .select2-results__options::-webkit-scrollbar-thumb {
   background: linear-gradient(var(--red), var(--bs-red));
   border-radius: 6px;
+}
+
+
+.accordions .accordion-item {
+  margin-bottom: 10px;
 }

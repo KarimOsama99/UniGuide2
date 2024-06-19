@@ -2285,3 +2285,20 @@ h5 {
 .accordions .accordion-item {
   margin-bottom: 10px;
 }
+
+.login .form {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10196);
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login .form h4 {
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: bold;
+}
+.login .form h4,
+.login .form p {
+  text-align: center;
+}

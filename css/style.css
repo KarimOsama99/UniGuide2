@@ -574,10 +574,10 @@ body {
   color: var(--green);
   margin-bottom: 20px;
 }
-.faq.agent {
+/* .faq.agent {
   background-color: unset;
   padding: 25px;
-}
+} */
 .faq.agent .get-in-touch {
   border-radius: 10px !important;
   padding: 25px;
@@ -593,13 +593,11 @@ body {
   z-index: -1;
 }
 
-/* .videoAbsolute {
-  position: absolute;
-  width: 45%;
-  right: -150px;
-  top: 50%;
-  transform: translateY(-50%);
-} */
+.videoAbsolute {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+}
 
 
 .btn-close {
@@ -623,6 +621,9 @@ body {
   }
   .faq.agent .get-in-touch {
     overflow: visible !important;
+  }
+  .videoAbsolute {
+    margin: unset;
   }
 }
 .faq ul li i {

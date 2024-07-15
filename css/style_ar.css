@@ -180,10 +180,11 @@ body.showFilter .filterSide {
 }
 
 
-.llogo {
+/*.llogo {
     left: unset;
     right: 25px;
 }
+*/
 .majorr {
     left: unset !important;
     right: -37px;
